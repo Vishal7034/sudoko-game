@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    grid-template-rows: repeat(9, 40px);
+    margin: 20px auto;
+    border: 2px solid black;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid lightgray;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.cell.fixed {
+    background-color: #eee;
+}
+
+#solve-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
